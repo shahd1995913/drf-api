@@ -14,7 +14,7 @@ class PostModelTests(TestCase):
    
         test_the_user.save()
    
-        test_the_post = Post.objects.create(title='Test Post', body='Test Post Body', author=testuser1)
+        test_the_post = Post.objects.create(title='Test Post', body='Test Post Body', author=test_the_user)
    
         test_the_post.save()
     
